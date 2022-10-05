@@ -1,1 +1,99 @@
+container {
+    display: flex;
+    flex-direction: column;
+}
 
+body {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
+}
+
+header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3; /* where does the center column end */
+    padding-top: auto;
+    padding-bottom: auto;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:blueviolet;
+
+/* children */
+display: grid;
+grid-template-rows: auto;
+grid-template-columns: auto auto;
+
+}
+
+section-header-left-column {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: white;
+    justify-content: left;
+    align-content: left;
+    width: fit-content;
+    padding-top: auto;
+    padding-left: 50px;
+    padding-right: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+
+}
+
+section-header-right-column {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3; /* where does this one eeennnddd */
+    justify-content: right;
+    align-content: right;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    column-gap: 5.5px;
+    padding-right: 50px;
+    padding-left: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: blueviolet;
+
+}
+
+
+section-question-container {
+    border-style: solid;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+
+    height: 50vh;
+    width: 50vw;
+    text-align: center;
+    justify-self: center;
+    align-self: start;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-left: 25px solid;
+    border-right: 25px solid;
+    padding-top: 70px;
+    padding-bottom: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+}
+section-question {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    justify-content: center;
+    align-content: center;
+    padding-top: 100px;
+    padding-bottom: 10px;
+
+}
