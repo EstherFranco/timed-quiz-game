@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"> </script>
+
+    <title>Coding Quiz Game</title>
+</head>
+
+<body>
+    <container id="quiz">
+    </container>
+
+    <container>
+        <br />
+        <p>Your Answer</p>
+        <input id="user-answer"/>
+        <button onclick="nextQuestion()">Submit</button>
+        <p>You only have 10 secs to answer this question!</p>
+        <timer id="timer" data-timer="0">0 secs</timer>
+    </container>
+
+</body>
+
+</html>
